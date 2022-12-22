@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="401dp"
+        android:layout_height="42dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="41dp"
+        android:background="@color/purple_500"
+        android:paddingLeft="150dp"
+        android:paddingTop="10dp"
+        android:paddingRight="150dp"
+        android:paddingBottom="10dp"
+        android:text="Welcome Text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ButtonTwo"
+        android:layout_width="173dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="ButtonTwoOnClick"
+        android:text="Button TWO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonOne" />
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="173dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="ButtonOneOnClick"
+        android:text="Button One"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
